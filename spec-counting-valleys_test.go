@@ -3,8 +3,12 @@ package main
 import "testing"
 
 func TestCountingValleys1(t *testing.T) {
-	// if socks != 3 {
-	// 	t.Errorf("got %d instead of 3", socks)
-	// }
+	ar := "UDDDUDUU"
+	n := int32(8)
+
+	valleys := countingValleys(n, ar)
+	if valleys != 1 {
+		t.Errorf("got %d instead of 1", valleys)
+	}
 
 }
